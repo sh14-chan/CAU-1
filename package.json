@@ -1,0 +1,13 @@
+{
+  "name": "CAU",
+  "version": "1.0.0",
+  "description": "Cat Acquisition Utility v8.5.22",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/sh14-chan/CAU-1.git",
+  "author": "mrowr",
+  "license": "MIT",
+  "private": false
+}
