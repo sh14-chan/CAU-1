@@ -4,6 +4,8 @@ const loader = document.getElementById("loader");
 
 const url = "https://cataas.com/cat?json=true";
 
+loader.style.opacity = "0";
+
 async function onClick() {
   loader.style.opacity = "1";
   const res = await fetch(url);
