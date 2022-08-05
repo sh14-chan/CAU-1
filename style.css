@@ -143,7 +143,7 @@ body {
   flex-grow: 1;
   margin-top: 1.5rem;
   display: flex;
-  justify-content: center;
+  align-content: center;
   align-items: center;
   max-height: 100%;
   max-width: 100%;
@@ -151,7 +151,7 @@ body {
 
 img {
   object-fit: contain;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
   max-height: 75vh;
   max-width: 95vw;
   border-radius: 0.5rem;
@@ -159,6 +159,11 @@ img {
   flex-grow: 1;
   min-width: 100%;
   min-height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .button-container {
@@ -195,6 +200,7 @@ button:hover {
 button:active {
   cursor: pointer;
   background-color: rgb(90, 90, 90);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 svg {
