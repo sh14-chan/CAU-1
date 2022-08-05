@@ -203,7 +203,7 @@ svg {
   animation: spin 1s infinite;
   animation-timing-function: linear;
   color: rgb(200, 200, 200);
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.6rem;
 }
 
 @keyframes spin {
