@@ -1,0 +1,216 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+body {
+  background-color: rgb(80, 80, 80);
+}
+
+.image-container {
+  flex-grow: 1;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+img {
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-height: 75vh;
+  max-width: 95vw;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+  flex-grow: 1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  appearance: none;
+  background-color: rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
+  font-family: Helvetica;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(100, 100, 100);
+}
+
+button:active {
+  cursor: pointer;
+  background-color: rgb(90, 90, 90);
+}
+
+svg {
+  height: 40px;
+  width: 40px;
+  animation: spin 1s infinite;
+  animation-timing-function: linear;
+  color: rgb(200, 200, 200);
+  margin-bottom: 1.75rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
